@@ -1,8 +1,9 @@
 version: '3'
 
 services:
-  webserver1:
+  webserver:
     image: php:7.3-apache
+    network_mode: bridge
     expose:
       - 80
     environment:
