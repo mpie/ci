@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  webserver1:
+    image: php:7.3-apache
+    expose:
+      - 80
+    environment:
+      VIRTUAL_HOST: main.localhost
+    volumes:
+      - $PWD/html:/var/www/html
