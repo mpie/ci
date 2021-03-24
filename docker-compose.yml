@@ -8,4 +8,4 @@ services:
     environment:
       VIRTUAL_HOST: awesome.localhost
     volumes:
-      - $PWD:/var/www/html
+      - $PWD/html:/var/www/html
