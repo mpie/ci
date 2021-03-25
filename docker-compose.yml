@@ -2,11 +2,11 @@ version: '3'
 
 services:
   webserver:
-    image: php:7.3-apache
+    image: php:8-apache
     network_mode: bridge
     expose:
       - 80
     environment:
-      VIRTUAL_HOST: main.localhost
+      VIRTUAL_HOST: php.localhost
     volumes:
       - $PWD/html:/var/www/html
